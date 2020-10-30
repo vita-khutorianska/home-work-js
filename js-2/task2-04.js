@@ -4,10 +4,7 @@ function formatString(string, maxLength = 40) {
     if (string.length > maxLength) {
         string = string.substring(0, maxLength) + "...";
     }
-
-
     return string;
-
 }
 
  console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
