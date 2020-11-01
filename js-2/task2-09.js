@@ -1,7 +1,7 @@
 function isLoginValid(login, min = 4, max = 16) {
     // Write code under this line
    
-    if (login.lenght < min && login.lenght > max) {
+    if (login.length < min || login.length > max) {
         return false;
     }
     else { return true; }
