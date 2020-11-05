@@ -2,7 +2,7 @@ function formatString(string, maxLength = 40) {
     // Write code under this line
     
     if (string.length > maxLength) {
-        string = string.substring(0, maxLength) + "...";
+        string = string.slice(0, maxLength) + "...";
     }
     return string;
 }
