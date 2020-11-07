@@ -1,6 +1,6 @@
 const calculateEngravingPrice = (message = "", pricePerWord = 0) =>
 
-   message.split(' ').length * pricePerWord;
+       message.split(' ').length * pricePerWord;
     // const messageLength = messageSplit.length;
    
    

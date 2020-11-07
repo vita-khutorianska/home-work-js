@@ -1,18 +1,13 @@
 function isLoginValid(login, min = 4, max = 16) {
     // Write code under this line
    
-    if (login.length < min || login.length > max) {
-        return false;
-    }
-    else { return true; }
+    return login.length < min || login.length > max ? false : true; 
+    
 }
 function isLoginUnique(allLogins, login) {
     'use strict';
     // Write code under this line
-    if (allLogins.includes(login)) {
-        return false;
-    }
-    else { return true; }
+    return allLogins.includes(login) ?false: true;
 }
 function addLogin(allLogins, login) {
     'use strict';
@@ -26,10 +21,10 @@ function addLogin(allLogins, login) {
         allLogins.push(login);
     }
     else {
-        if (isLoginValid(login) === false) {
+        if (!isLoginValid(login)) {
             message = ERROR;
         }
-        if (isLoginUnique(allLogins, login) === false) {
+        if (!isLoginUnique(allLogins, login)) {
             message = REFUSAL;
         }
     }
